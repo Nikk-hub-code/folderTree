@@ -23,3 +23,40 @@ DEFAULT_IGNORES = {
     "node_modules",
     ".DS_Store",
 }
+
+EXTENSION_TO_LANGUAGE = {
+    ".py": "Python",
+    ".js": "JavaScript",
+    ".ts": "TypeScript",
+    ".java": "Java",
+    ".c": "C",
+    ".cpp": "C++",
+    ".cs": "C#",
+    ".go": "Go",
+    ".rs": "Rust",
+    ".php": "PHP",
+    ".rb": "Ruby",
+
+    ".html": "HTML",
+    ".css": "CSS",
+    ".scss": "SCSS",
+
+    ".json": "JSON",
+    ".xml": "XML",
+    ".yaml": "YAML",
+    ".yml": "YAML",
+    ".toml": "TOML",
+    ".ini": "INI",
+
+    ".md": "Markdown",
+    ".txt": "Text",
+
+    ".sh": "Shell",
+    ".bat": "Batch",
+    ".ps1": "PowerShell",
+
+    ".sql": "SQL",
+
+    ".dockerfile": "Docker",
+    ".env": "Environment",
+}
