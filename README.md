@@ -10,11 +10,11 @@ A modern Python tool to scan project directories, generate beautiful folder tree
 - ✅ Filesystem metadata collection
 - ✅ Configurable ignore rules
 - ✅ Project object model
-- 🚧 Tree generator
-- 🚧 Statistics analyzer
-- 🚧 Language analyzer
-- 🚧 Markdown exporter
-- 🚧 Documentation generator
+- ✅ Tree generator
+- ✅ Statistics analyzer
+- ✅ Language analyzer
+- ✅ Markdown exporter
+- ✅ Documentation generator
 - 🚧 CLI
 
 ## Project Status
