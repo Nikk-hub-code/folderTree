@@ -2,32 +2,31 @@
 
 All notable changes to this project will be documented in this file.
 
-The format is based on **Keep a Changelog**,
-and this project follows **Semantic Versioning (SemVer)**.
-
-## [Unreleased]
-
-### Added
-- Project structure following the `src` layout.
-- Core data models (`Project`, `Folder`, `File`, `Metadata`).
-- Configuration system.
-- Helper utilities.
-- Ignore engine for hidden files and ignore patterns.
-- Metadata collector for filesystem information.
-- Recursive project scanner.
-- Initial scanner test suite.
-
-### Changed
-- Refactored metadata into a dedicated `Metadata` model.
-- Updated `File` and `Folder` models to use shared metadata.
-
-### Fixed
-- Corrected scanner recursion and folder creation.
-- Added proper package configuration using `pyproject.toml`.
+The format is based on Semantic Versioning.
 
 ---
 
-## [0.1.0] - 2026-07-12
+## [0.1.0] - 2026-07-17
 
 ### Added
-- Initial project setup.
+
+- Initial release of FolderTree CLI tool
+- Scan project directories and analyze structure
+- Recursive folder tree generation
+- File metadata collection
+- Project statistics analysis:
+  - Total files
+  - Total folders
+  - Total size
+  - File extension counts
+- Programming language detection
+- Automatic project documentation generation
+- Terminal documentation preview
+- Markdown documentation export
+- TXT documentation export
+- CLI interface with:
+  - `folderTree scan .`
+  - `folderTree scan . -o PROJECT.md`
+  - `folderTree scan . -o PROJECT.txt`
+- Configurable ignore handling
+- Complete test suite covering core functionality

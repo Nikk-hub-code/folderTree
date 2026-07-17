@@ -22,3 +22,6 @@ where = ["src"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]
+
+[project.scripts]
+folderTree = "folderTree.cli.main:main"
