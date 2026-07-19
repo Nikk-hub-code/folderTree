@@ -27,7 +27,7 @@ FolderTree scans your project, collects metadata, analyzes project statistics, d
 ## Installation
 
 ```bash
-pip install folderTree
+pip install folderTree-cli
 ```
 
 After installation, the `folderTree` command will be available globally.
