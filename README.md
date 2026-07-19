@@ -1,26 +1,30 @@
 # FolderTree
 
-A CLI tool that automatically analyzes a project folder and generates clean project documentation.
+A lightweight command-line tool that automatically analyzes a project directory and generates clean, well-structured project documentation.
 
-FolderTree scans your project structure, collects metadata, analyzes statistics, detects programming languages, generates a folder tree, and creates documentation in Markdown or TXT format.
+FolderTree scans your project, collects metadata, analyzes project statistics, detects programming languages, generates a folder tree, and exports documentation in Markdown or TXT format.
 
 ---
 
 ## Features
 
 - 📁 Scan any project directory
-- 🌳 Generate folder structure tree
+- 🌳 Generate a beautiful folder tree
 - 📊 Analyze project statistics
 - 💻 Detect programming languages
 - 📝 Generate project documentation
 - 📄 Export documentation as Markdown or TXT
-- ⚡ Simple CLI interface
+- ⚡ Fast and simple CLI interface
+
+---
+
+## Requirements
+
+- Python **3.11** or later
 
 ---
 
 ## Installation
-
-Install using pip:
 
 ```bash
 pip install folderTree
@@ -32,13 +36,27 @@ After installation, the `folderTree` command will be available globally.
 
 ## Usage
 
-### View documentation in terminal
+### Show available commands
+
+```bash
+folderTree --help
+```
+
+---
+
+### Generate documentation in the terminal
 
 ```bash
 folderTree scan .
 ```
 
-Example:
+or
+
+```bash
+folderTree scan path/to/project
+```
+
+Example
 
 ```bash
 folderTree scan sample_projects/python_project
@@ -46,7 +64,7 @@ folderTree scan sample_projects/python_project
 
 ---
 
-### Save documentation as Markdown
+### Export as Markdown
 
 ```bash
 folderTree scan . -o PROJECT_DOCUMENTATION.md
@@ -54,7 +72,7 @@ folderTree scan . -o PROJECT_DOCUMENTATION.md
 
 ---
 
-### Save documentation as TXT
+### Export as TXT
 
 ```bash
 folderTree scan . -o PROJECT_DOCUMENTATION.txt
@@ -62,48 +80,49 @@ folderTree scan . -o PROJECT_DOCUMENTATION.txt
 
 ---
 
-## Generated Documentation Example
+## Example Output
 
-FolderTree generates documentation containing:
-
-```
+```text
 # Project Documentation
 
 ## Project Information
 
-- Project Name
-- Project Location
-- Project Created
-- Last Modified
-- Documentation Generated
+- Project Name: folderTree
+- Project Location: D:\Projects\folderTree
+- Project Created: 2026-07-10
+- Documentation Generated: 2026-07-19
 
 ## Statistics
 
-- Total Files
-- Total Folders
-- Total Size
+- Total Files: 59
+- Total Folders: 22
+- Total Size: 41.94 KB
 
 ## Languages
 
-- Python
-- Markdown
-- Text
-- Other detected languages
+- Python: 47
+- Markdown: 4
+- TOML: 1
+- HTML: 1
+- CSS: 1
+- JavaScript: 1
 
 ## Folder Structure
 
-project/
+folderTree/
 ├── src/
-│   ├── main.py
-│   └── utils.py
-└── README.md
+│   └── folderTree/
+├── tests/
+├── README.md
+├── LICENSE
+└── pyproject.toml
 ```
 
 ---
 
 ## Project Structure
 
-```
+```text
 folderTree/
 │
 ├── src/
@@ -113,10 +132,11 @@ folderTree/
 │       ├── exporters/
 │       ├── generators/
 │       ├── models/
-│       └── scanner/
+│       ├── scanner/
+│       └── utils/
 │
 ├── tests/
-│
+├── docs/
 ├── README.md
 ├── LICENSE
 ├── CHANGELOG.md
@@ -130,7 +150,13 @@ folderTree/
 Clone the repository:
 
 ```bash
-git clone <https://github.com/Nikk-hub-code/folderTree>
+git clone https://github.com/Nikk-hub-code/folderTree.git
+```
+
+Move into the project directory:
+
+```bash
+cd folderTree
 ```
 
 Install in editable mode:
@@ -139,7 +165,7 @@ Install in editable mode:
 pip install -e .
 ```
 
-Run tests:
+Run the test suite:
 
 ```bash
 pytest

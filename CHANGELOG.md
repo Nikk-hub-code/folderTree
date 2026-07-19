@@ -19,7 +19,7 @@ The format is based on Semantic Versioning.
   - Total folders
   - Total size
   - File extension counts
-- Programming language detection
+- Programming language detection based on file extensions
 - Automatic project documentation generation
 - Terminal documentation preview
 - Markdown documentation export
@@ -30,3 +30,7 @@ The format is based on Semantic Versioning.
   - `folderTree scan . -o PROJECT.txt`
 - Configurable ignore handling
 - Complete test suite covering core functionality
+
+### Requirements
+
+- Python 3.11 or later

@@ -8,10 +8,46 @@ version = "0.1.0"
 description = "Generate beautiful folder tree structures and project documentation."
 readme = "README.md"
 requires-python = ">=3.11"
-license = { text = "MIT" }
+license = "MIT"
+
 authors = [
     { name = "Kaushal Kumar Jha" }
 ]
+
+keywords = [
+    "folder-tree",
+    "tree",
+    "documentation",
+    "cli",
+    "filesystem",
+    "project",
+    "directory",
+    "python"
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development",
+    "Topic :: Utilities",
+]
+
+license-files = ["LICENSE"]
+
+[project.urls]
+Homepage = "https://github.com/Nikk-hub-code/folderTree"
+Repository = "https://github.com/Nikk-hub-code/folderTree"
+Issues = "https://github.com/Nikk-hub-code/folderTree/issues"
+
+[project.scripts]
+folderTree = "folderTree.cli.main:main"
 
 [tool.setuptools]
 package-dir = { "" = "src" }
@@ -22,6 +58,3 @@ where = ["src"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 pythonpath = ["src"]
-
-[project.scripts]
-folderTree = "folderTree.cli.main:main"

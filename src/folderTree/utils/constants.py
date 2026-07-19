@@ -17,6 +17,7 @@ DEFAULT_IGNORES = {
     "venv",
     "env",
     "test_env",
+    "test_venv",
     "build",
     "dist",
     "*.egg-info",
